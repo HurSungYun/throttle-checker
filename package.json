@@ -1,0 +1,27 @@
+{
+  "name": "throttle-checker",
+  "version": "0.1.0",
+  "description": "simple throttle checker",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HurSungYun/throttle-checker.git"
+  },
+  "author": "ethan hur",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HurSungYun/throttle-checker/issues"
+  },
+  "homepage": "https://github.com/HurSungYun/throttle-checker#readme",
+  "devDependencies": {
+    "typescript": "^3.5.3"
+  },
+  "files": [
+    "lib/**/*"
+  ]
+}
