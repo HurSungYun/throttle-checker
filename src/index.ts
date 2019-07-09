@@ -1,4 +1,4 @@
-export default class ThrottleChecker {
+export class ThrottleChecker {
   period: number; // period window for checking throttling. seconds
   threshold: number; // threshold count for throttling.
   count: number;

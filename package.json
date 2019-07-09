@@ -1,6 +1,6 @@
 {
   "name": "throttle-checker",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "simple throttle checker",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",

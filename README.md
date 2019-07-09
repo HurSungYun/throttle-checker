@@ -3,11 +3,11 @@
 simple throttle checker for Typescript
 
 ```typescript
-const throttle_checker = require('throttle-checker');
+import { ThrottleChecker } from 'throttle-checker';
 
-const checker = new throttle_checker.ThrottleChecker();
+const checker = new ThrottleChecker();
 
-if (check.check()) {
+if (checker.check()) {
   console.log('throttled!');
 }
 ```
