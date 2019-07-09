@@ -5,9 +5,11 @@ simple throttle checker for Typescript
 ```typescript
 import { ThrottleChecker } from 'throttle-checker';
 
-const checker = new ThrottleChecker();
+const checker = new ThrottleChecker(10, 10, 3);
 
-if (checker.check()) {
-  console.log('throttled!');
+for (let i = 0; i < 10; i++) {
+  if (checker.check()) {
+    console.log('throttled!');
+  }
 }
 ```
