@@ -5,15 +5,19 @@ simple throttle checker for Typescript
 ```typescript
 import { ThrottleChecker } from 'throttle-checker';
 
-const period = 10; // time window for checking throttling. seconds
-const throttleTime = 10; // time to delay reset time when throttled. seconds
-const threshold = 3; // threshold count for throttling.
+function throttleCallback() {
+  console.log('throttled!');
+}
 
-const checker = new ThrottleChecker(period, throttleTime, threshold);
+export const throttle = new ThrottleChecker({
+  period: 10 * 60, // sec
+  throttle_time: 10 * 60, // sec
+  threshold: 5,
+}, throttleCallback);
 
 for (let i = 0; i < 10; i++) {
   if (checker.check()) {
-    console.log('throttled!');
+    console.log('triggered: ' + i);
   }
 }
 ```
